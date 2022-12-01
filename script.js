@@ -1,13 +1,8 @@
 // Assignment code here
-var isNumber = window.confirm ('Would you like numbers in your password?')
-  var isUppercase = window.confirm ('Would you like Uppercase letters in your password?')
-  var isLowercase = window.confirm ('Would you like Lowercase letters in your password?')
-  var isSpecial = window.confirm ('Would you like special characters in your password?')
-
-  var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  var upperCase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-  var lowerCase = ['a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-  var specialChar = ['!' , '#' , '$' , '%' , '&' , '()' , '*' , '+' , '-' , '.' , '/' , ':' , ';' , '<' , '=' , '>' , '?' , '@' , '[' , '`' , '{' , '|' , '}' , '~'];
+  var isNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+  var isUppercase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+  var isLowercase = ['a','b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+  var isSpecialchar = ['!' , '#' , '$' , '%' , '&' , '()' , '*' , '+' , '-' , '.' , '/' , ':' , ';' , '<' , '=' , '>' , '?' , '@' , '[' , '`' , '{' , '|' , '}' , '~'];
 var confirmations = [];
 
 function writePassword() {
@@ -31,28 +26,28 @@ function generatePassword(){
  
   var lowerCaseConf = confirm("Do you want lowercase letters?");
   if (lowerCaseConf === true) {
-    for (var i = 0; i < lowerCase.length; i++) {
+    for (var i = 0; i < isLowercase.length; i++) {
       confirmations.push(lowerCase[i]);
     }
 }
 
 var upperCaseConf = confirm("Do you want uppercase letters?");
   if (upperCaseConf === true) {
-    for (var i = 0; i < upperCase.length; i++) {
+    for (var i = 0; i < isUppercase.length; i++) {
       confirmations.push(upperCase[i]);
     }
   }
 
   var numberConf = confirm("Do you want numbers?");
   if (numberConf === true) {
-    for (var i = 0; i < numbers.length; i++) {
+    for (var i = 0; i < isNumbers.length; i++) {
       confirmations.push(numbers[i]);
     }
   }
 
   var specialConf = confirm("Do you want characters?");
   if (specialConf === true) {
-    for (var i = 0; i < special.length; i++) {
+    for (var i = 0; i < isSpecialchar.length; i++) {
       confirmations.push(special[i]);
     }
   }
