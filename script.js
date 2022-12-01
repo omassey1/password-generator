@@ -56,6 +56,17 @@ var upperCaseConf = confirm("Do you want uppercase letters?");
       confirmations.push(special[i]);
     }
   }
+
+  var randomPass = "";
+  for (var i = 0; i < confirmPasswordLength; i++) {
+    confirmations[
+      Math.floor(Math.random() * confirmations.length)];
+    randomPass +=
+      confirmations[
+      Math.floor(Math.random() * confirmations.length)];
+  }
+  return randomPass
+}
     
     // Get references to the #generate element
     var generateBtn = document.querySelector("#generate");
