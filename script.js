@@ -49,6 +49,13 @@ var upperCaseConf = confirm("Do you want uppercase letters?");
       confirmations.push(numbers[i]);
     }
   }
+
+  var specialConf = confirm("Do you want characters?");
+  if (specialConf === true) {
+    for (var i = 0; i < special.length; i++) {
+      confirmations.push(special[i]);
+    }
+  }
     
     // Get references to the #generate element
     var generateBtn = document.querySelector("#generate");
