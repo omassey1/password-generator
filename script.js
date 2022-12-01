@@ -27,28 +27,28 @@ function generatePassword(){
   var lowerCaseConf = confirm("Do you want lowercase letters?");
   if (lowerCaseConf === true) {
     for (var i = 0; i < isLowercase.length; i++) {
-      confirmations.push(lowerCase[i]);
+      confirmations.push(isLowercase[i]);
     }
 }
 
 var upperCaseConf = confirm("Do you want uppercase letters?");
   if (upperCaseConf === true) {
     for (var i = 0; i < isUppercase.length; i++) {
-      confirmations.push(upperCase[i]);
+      confirmations.push(isUppercase[i]);
     }
   }
 
   var numberConf = confirm("Do you want numbers?");
   if (numberConf === true) {
     for (var i = 0; i < isNumbers.length; i++) {
-      confirmations.push(numbers[i]);
+      confirmations.push(isNumbers[i]);
     }
   }
 
   var specialConf = confirm("Do you want characters?");
   if (specialConf === true) {
     for (var i = 0; i < isSpecialchar.length; i++) {
-      confirmations.push(special[i]);
+      confirmations.push(isSpecialchar[i]);
     }
   }
 
